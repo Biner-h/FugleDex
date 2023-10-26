@@ -1,0 +1,51 @@
+/*Hjemmeside*/
+body {
+    margin: 0px;
+    padding: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow:hidden;
+}
+.fugledex{
+    color: white;
+}
+.search-container {
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    display: flex;
+    margin-right: 100%;
+}
+.icon:hover{
+    cursor: pointer;
+}
+input {
+    border-radius: 5px;
+    font-size: 20px;
+}
+.buttonContainers{
+    position: absolute;
+    top: 2%;
+    right: 5%;
+    color: white;
+    display: flex;
+}
+#loggInn{
+    margin: 10px;
+    position: relative;
+}
+.leaderboardContainer {
+    position: fixed;
+    top: 15%;
+    right: 5%;
+    width: 350px;
+    height: 350px;
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 10px;
+}
+.leaderboard-info {
+    margin-left: 45%; 
+    font-size: 20px; 
+    color: gray; 
+}

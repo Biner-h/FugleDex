@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0px;
+    background-size: cover;
+    overflow: hidden;
+    background: no-repeat fixed 100% 100%;
+}
+
+.container {
+    text-align: center;
+}
+
+.Field{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+}
+
+.Field label {
+    margin-right: 10px;
+}
+
+.Field input {
+    color:white;
+    background-color: black;
+    border: 1px solid darkgray;
+    text-align: center;
+    border-radius: 20px;
+    width: 100%;
+    padding: 5px;
+}
+
+.input{
+    font-size: 1.1rem;
+}
+
+.txt{
+    color: white;
+    font-size: 1.7rem;
+    margin-right: 10px;
+}
+
+.button-container {
+    margin: 10px;
+    margin-left: 50%;
+}
+
+.knapp {
+    padding: 6px 12px;
+    margin: 5px;
+    background-color: black;
+    color: white;
+}
+
+.knapp:hover{
+    box-shadow: 0 0 10px 5px white;
+    cursor: pointer;
+}
