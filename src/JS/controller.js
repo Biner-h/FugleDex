@@ -43,7 +43,7 @@ function showDropDown()
 {document.getElementById("dropDown").classList.toggle("show");}
 
     
-function swap(csslinker,title,link)
+const swap = (csslinker,title,link) =>
 {
     console.log(csslinker)
     console.log(title)
@@ -55,4 +55,6 @@ function swap(csslinker,title,link)
                         <title>${title}</title>`;
     document.body.style.backgroundImage = "url("+link+")"
     console.log(linker + " " + csslinker)
+    console.log(model.app.pageOrigin);
+    console.log(model.app.currentPage);
 }

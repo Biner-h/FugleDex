@@ -5,7 +5,6 @@ function updateHomePageView(){
     <input type="text" placeholder="Search birds..."><div class="icon" onclick="search()">🔍</div>
     </div>
     <div class="buttonContainers">
-    <div class="backBtn">Tilbake</div>
     <div class="allBtn">Alle Fugler</div>
     <div class="foundBtn">Alle Mine Funn</div>
     <label for="logg" id="loggetInn">Logget inn som: </label>

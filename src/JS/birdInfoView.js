@@ -24,7 +24,9 @@ function showBirdInfo(index){
 
 function tilbake(){
     model.app.currentPage = model.app.pageOrigin;
-    updateView()
+    model.app.pageOrigin = "";
+    updateView();
+    
 }
 
 function homeButton(){

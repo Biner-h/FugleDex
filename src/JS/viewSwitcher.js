@@ -19,24 +19,28 @@ function updateView(){
         case "home":
             updateHomePageView()
             swap("./src/CSS/homePage.css","Hjem","src/Picture/home.jpg")
+            model.app.pageOrigin = "home";
             break;
 
         case "allBirds":
             console.log("allBirdsFirst")
             updateAllBirdsView()
             swap("./src/CSS/allBirdsPage.css","Alle fugler","src/Picture/alle_Fugler.jpg")
+            model.app.pageOrigin = "allBirds";
             console.log("allBirds")
             break;
             
         case "myBirds":
-            updateMyBirdsView()
-            swap("./src/CSS/allBirdsPage.css","Alle fugler","src/Picture/mine_funn.png")
+            updateMyBirdsView();
+            swap("./src/CSS/myBirdsPage.css","Alle mine funn","src/Picture/mine_funn.png");
+            model.app.pageOrigin = "myBirds";
             break;
 
         case "birdInfo":
             updateBirdInfoView()
             swap("./src/CSS/birdInfoPage.css","Fugle info","src/Picture/bird_Info.jpg")
             break;
+            // default: throw "ERR";
     }
 }
 

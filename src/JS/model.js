@@ -5,7 +5,7 @@ const body = document.body;
 const birds = document.querySelector('.birds');
 const model = {
     app: {
-        currentPage:"login",
+        currentPage:"myBirds",
         pageOrigin:"",
         loggedInUser: "Linn",
         currentBird:null,
