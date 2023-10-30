@@ -13,7 +13,7 @@ function updateHomePageView(){
 </label>
     <div class="dropdown-toggle" onclick="toggleDropdown()">Linn </div>
     <div class="dropdown-menu">
-        <div class="dropdown-item" onclick="loggOut()">Logg Ut</div>
+        <div class="dropdown-item" onclick="fortsett('login')">Logg Ut</div>
     </div>
 </div>
 </div>
@@ -40,3 +40,7 @@ function updateHomePageView(){
     `
 }
 
+function toggleDropdown() {
+    var dropdownMenu = document.querySelector('.dropdown-menu');
+    dropdownMenu.style.display = (dropdownMenu.style.display === 'none' || dropdownMenu.style.display === '') ? 'block' : 'none';
+}
