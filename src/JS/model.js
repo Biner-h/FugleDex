@@ -5,14 +5,18 @@ const body = document.body;
 const birds = document.querySelector('.birds');
 const model = {
     app: {
-        currentPage:"myBirds",
+        currentPage:"startPage",
         pageOrigin:"",
         loggedInUser: "Linn",
         currentBird:null,
     },
 
     inputs: {
-   
+        
+        startPage: {
+            
+        },
+
         loginPage: {
             user_Name: '',
             password: '',

@@ -36,6 +36,15 @@ const lifespan = () =>
     
 }
 
+
+function fortsett(param)
+{
+    model.app.currentPage = param
+    updateView()
+}
+
+
+
 const run = (bird)=>
 {tracker.push(bird);console.log("Bird tracker " + bird);}
 

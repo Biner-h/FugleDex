@@ -42,7 +42,3 @@ function updateView(){
             break;
     }
 }
-
-/*function changeBg(link){
-document.body.style.backgroundImage = "url("+link+")"
-}*/

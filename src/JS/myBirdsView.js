@@ -1,7 +1,7 @@
 updateView();
 
 function updateMyBirdsView(){
-    document.getElementById("app").innerHTML = `
+    document.getElementById("app").innerHTML = /*HTML*/`
     <div class="container"> 
     <h1>Alle mine funn</h1>
     <div class="dropdown">
@@ -14,7 +14,7 @@ function updateMyBirdsView(){
         <p class="sorterFilter" onclick="lifespan();">Levetid</p>
     </div>
 </div> 
-<div class="home" onclick="homeButton()">Hjem</div>
+<div class="home" onclick="fortsett('home')">Hjem</div>
 <div class="birds">${showBirds(model)}</div>
     </div>`;
 }
@@ -32,9 +32,4 @@ function showBirds(model)
         </div>`;
     }
     return div;
-}
-
-function homeButton(){
-    model.app.currentPage = "home"
-    updateView()
 }

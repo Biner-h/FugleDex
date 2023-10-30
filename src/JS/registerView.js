@@ -1,11 +1,11 @@
 function updateRegisterPageView(){
-    document.getElementById("app").innerHTML = `
+    document.getElementById("app").innerHTML = /*HTML*/`
     <div class="container"> 
     <div class="form-box">
     <form action="" name="">
       <h1></h1>
       <div class="input-box">
-        <label for="Brukernavn">Brukernavn:</label>
+        <div class ="txt">Brukernavn </div>
         <input type="text" name="Brukernavn" placeholder="Brukernavn" />
       </div>
       <div class="input-box">
@@ -30,3 +30,4 @@ function updateRegisterPageView(){
     </form>   
     </div>`
 }
+

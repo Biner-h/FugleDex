@@ -12,18 +12,8 @@ function updateLoginPageView(){
             <div class="logo"></div>
         </div>
         <div class="button-container">
-            <button class="knapp" onclick="registerButton()">Registrer</button>
-            <button class="knapp" onclick="loginButton()">Logg inn</button>
+            <button class="knapp" onclick="fortsett('register')">Registrer</button>
+            <button class="knapp" onclick="fortsett('home')">Logg inn</button>
         </div>
     </div>`
-}
-
-function registerButton(){
-    model.app.currentPage = "register"
-    updateView()
-}
-
-function loginButton(){
-    model.app.currentPage = "home"
-    updateView()
 }
