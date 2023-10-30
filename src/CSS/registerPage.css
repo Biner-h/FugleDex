@@ -1,34 +1,36 @@
-body{
-    padding: 0;    
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: 0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
+    padding: 0px;
     background-size: cover;
     overflow: hidden;
     background: no-repeat fixed 100% 100%;
+    cursor: url('cursor-1.png'), auto; 
+
 }
 
+.container {
+    text-align: center;
+    cursor: url('cursor-1.png'), auto; 
+}
 
-.container{
+.Field{
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
+    margin: 10px;
+    cursor: url('cursor-1.png'), auto; 
 }
 
-
-.form-box{
-    position: relative;
-    border: 2 px;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 70vh;
+.Field label {
+    margin-right: 10px;
+    cursor: url('cursor-1.png'), auto; 
 }
 
-
-
-.input-box {
+.Field input {
     color:white;
     background-color: black;
     border: 1px solid darkgray;
@@ -36,10 +38,37 @@ body{
     border-radius: 20px;
     width: 100%;
     padding: 5px;
+    cursor: url('cursor-1.png'), auto; 
+}
+
+.input{
+    font-size: 1.2rem;
+    cursor: url('cursor-1.png'), auto; 
 }
 
 .txt{
     color: white;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     margin-right: 10px;
+    cursor: url('cursor-1.png'), auto; 
+    width: 253px;
+}
+
+.button-container {
+    margin: 10px;
+    margin-left: 65%;
+    cursor: url('cursor-1.png'), auto; 
+}
+
+.knapp {
+    padding: 8px 14px;
+    margin: 5px;
+    background-color: black;
+    color: white;
+    cursor: url('cursor-1.png'), auto; 
+}
+
+.knapp:hover{
+    box-shadow: 0 0 10px 5px white;
+    cursor: url('cursor-1.png'), auto; 
 }

@@ -5,6 +5,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     overflow:hidden;
+    cursor: url('cursor-1.png'), auto; 
+    user-select: none;
 }
 .button-containers {
     position: absolute;
@@ -14,6 +16,8 @@ body {
     display: flex;
     margin-right: 5%;
     justify-content: space-between;
+    cursor: url('cursor-1.png'), auto; 
+
 }
 
 #loggetInn{
@@ -22,19 +26,23 @@ body {
     margin: 10px;
     position: relative;
     user-select: none;
+    cursor: url('cursor-1.png'), auto; 
+
 }
 
 .dropdownhome {
     position: relative;
     display: inline-block;
+    cursor: url('cursor-1.png'), auto; 
+
 }
 
 .dropdown-toggle {
-    cursor: pointer;
     background-color: rgb(11, 10, 10);
     padding: 10px;
     border-radius: 5px;
     user-select: none;
+    cursor: url('cursor-1.png'), auto; 
 }
 
 .dropdown-menu {
@@ -45,6 +53,7 @@ body {
     z-index: 1;
     width: 168%;
     user-select: none;
+    cursor: url('cursor-1.png'), auto; 
 }
 
 .dropdown-item {
@@ -52,12 +61,13 @@ body {
     padding: 10px;
     color: rgb(255, 248, 248);
     user-select: none;
+    cursor: url('cursor-1.png'), auto; 
 }
 
 .dropdown-item:hover {
-    cursor: pointer;
     background-color: white;
     color: black;
+    cursor: url('cursor-1.png'), auto; 
 }
 
 .foundBtn{
@@ -68,11 +78,12 @@ body {
     position: relative;
     background-color: black;
     border: gray groove;
+    cursor: url('cursor-1.png'), auto; 
 }
 
 .foundBtn:hover{
-    cursor: pointer;
     box-shadow: 0 0 10px 5px white;
+    cursor: url('cursor-1.png'), auto; 
 }
 
 .allBtn{
@@ -83,11 +94,12 @@ body {
     font-weight: 600;
     background-color: black;
     border: gray groove;
+    cursor: url('cursor-1.png'), auto; 
 }
 
 .allBtn:hover{
-    cursor: pointer;
     box-shadow: 0 0 10px 5px white;
+    cursor: url('cursor-1.png'), auto; 
 }
 
 .fugledex{
@@ -95,11 +107,13 @@ body {
     font-size: 1.5rem;
     font-weight: 600;
     margin-right: 2%;
+    cursor: url('cursor-1.png'), auto; 
 }
 
 input {
     border-radius: 5px;
     font-size: 1.5rem;
+    cursor: url('cursor-1.png'), auto; 
 }
 
 .search-container {
@@ -108,20 +122,23 @@ input {
     left: 2%;
     display: flex;
     margin-right: 100%;
+    cursor: url('cursor-1.png'), auto; 
 }
 
 .icon{
-    cursor: pointer;
+    cursor: url('cursor-1.png'), auto; 
     font-size: 20px;
     transition: transform 0.3s ease;
 }
 
 .icon:hover{
     transform: scale(1.2);
+    cursor: url('cursor-1.png'), auto; 
 }
 
 label{
     display: flex;
+    cursor: url('cursor-1.png'), auto; 
 }
 
 .bird-container {
@@ -133,6 +150,7 @@ label{
     background-color: silver;
     padding: 20px;
     border-radius: 10px;
+    cursor: url('cursor-1.png'), auto; 
 }
 
 .leaderboard-container {
@@ -144,12 +162,15 @@ label{
     background-color: silver;
     padding: 20px;
     border-radius: 10px;
+    cursor: url('cursor-1.png'), auto; 
 }
 
 .leaderboard-info {
     margin-left: 35%; 
     font-size: 20px; 
-    color: gray; 
+    color: gray;
+    cursor: url('cursor-1.png'), auto; 
+
 }
 
 .bird-list p,
@@ -157,8 +178,10 @@ label{
     font-size: 18px;
     margin-bottom: 10px;
     border: 1px solid black;
+    cursor: url('cursor-1.png'), auto; 
 }
 
 p {
     padding: 10px;
+    cursor: url('cursor-1.png'), auto; 
 }
