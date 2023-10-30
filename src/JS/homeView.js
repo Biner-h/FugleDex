@@ -6,8 +6,8 @@ function updateHomePageView(){
     </label>
 </div>
 <div class="button-containers">
-    <div class="allBtn" onclick="fortsett('')">Alle Fugler</div>
-<div class="foundBtn" onclick="myBirds()">Alle Mine Funn</div>
+    <div class="allBtn" onclick="fortsett('allBirds')">Alle Fugler</div>
+<div class="foundBtn" onclick="fortsett('myBirds')">Alle Mine Funn</div>
 <label for="logg" id="loggetInn">Logget inn som: 
 <div id="logg" class="dropdownhome">
 </label>
