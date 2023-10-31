@@ -31,6 +31,25 @@ const size = () =>
 
 }
 
+function validator()
+{
+    for(let i = 0; i != model.data.accounts.length; i++)
+    {
+        if(model.data.accounts[i].user_Name == model.inputs.loginPage.user_Name && model.data.accounts[i].password == model.inputs.loginPage.password)
+        {
+            fortsett("home");
+            model.app.loggedInAs.name
+            break;
+        }
+        else if(model.data.accounts.length == model.data.accounts.length)
+        {
+            alert("Wrong username or password.");
+            return;
+        }
+    }
+
+}
+
 const lifespan = () =>
 {
     
