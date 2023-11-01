@@ -35,7 +35,8 @@ function validator()
 {
     for(let i = 0; i != model.data.accounts.length; i++)
     {
-        if(model.data.accounts[i].user_Name == model.inputs.loginPage.user_Name && model.data.accounts[i].password == model.inputs.loginPage.password)
+        if(model.data.accounts[i].user_Name == model.inputs.loginPage.user_Name && 
+            model.data.accounts[i].password == model.inputs.loginPage.password)
         {
             fortsett("home");
             model.app.loggedInAs.name
@@ -47,7 +48,6 @@ function validator()
             return;
         }
     }
-
 }
 
 function reg_Push()
@@ -66,8 +66,6 @@ function fortsett(param)
     model.app.currentPage = param
     updateView()
 }
-
-
 
 const run = (bird)=>
 {tracker.push(bird);console.log("Bird tracker " + bird);}
