@@ -5,183 +5,47 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     overflow:hidden;
-    cursor: url('cursor-1.png'), auto; 
-    user-select: none;
 }
-.button-containers {
+.fugledex{
+    color: white;
+}
+.search-container {
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    display: flex;
+    margin-right: 100%;
+}
+.icon:hover{
+    cursor: pointer;
+}
+input {
+    border-radius: 5px;
+    font-size: 20px;
+}
+.buttonContainers{
     position: absolute;
     top: 2%;
     right: 5%;
     color: white;
     display: flex;
-    margin-right: 5%;
-    justify-content: space-between;
-    cursor: url('cursor-1.png'), auto; 
-
 }
-
-#loggetInn{
-    color: white;
-    font-size: 1.5rem;
+#loggInn{
     margin: 10px;
     position: relative;
-    user-select: none;
-    cursor: url('cursor-1.png'), auto; 
-
 }
-
-.dropdownhome {
-    position: relative;
-    display: inline-block;
-    cursor: url('cursor-1.png'), auto; 
-
-}
-
-.dropdown-toggle {
-    background-color: rgb(11, 10, 10);
-    padding: 10px;
-    border-radius: 5px;
-    user-select: none;
-    cursor: url('cursor-1.png'), auto; 
-}
-
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    background-color: rgb(0, 0, 0);
-    box-shadow: 0px 8px 16px 0px rgba(207, 189, 189, 0.2);
-    z-index: 1;
-    width: 168%;
-    user-select: none;
-    cursor: url('cursor-1.png'), auto; 
-}
-
-.dropdown-item {
-    margin: 4%;
-    padding: 10px;
-    color: rgb(255, 248, 248);
-    user-select: none;
-    cursor: url('cursor-1.png'), auto; 
-}
-
-.dropdown-item:hover {
-    background-color: white;
-    color: black;
-    cursor: url('cursor-1.png'), auto; 
-}
-
-.foundBtn{
-    margin: 20px;
-    color: rgb(255, 255, 255);
-    font-size: 1.9rem;
-    font-weight: 600;
-    position: relative;
-    background-color: black;
-    border: gray groove;
-    cursor: url('cursor-1.png'), auto; 
-}
-
-.foundBtn:hover{
-    box-shadow: 0 0 10px 5px white;
-    cursor: url('cursor-1.png'), auto; 
-}
-
-.allBtn{
-    margin: 20px;
-    position: relative;
-    color: rgb(255, 255, 255);
-    font-size: 1.9rem;
-    font-weight: 600;
-    background-color: black;
-    border: gray groove;
-    cursor: url('cursor-1.png'), auto; 
-}
-
-.allBtn:hover{
-    box-shadow: 0 0 10px 5px white;
-    cursor: url('cursor-1.png'), auto; 
-}
-
-.fugledex{
-    color: white;
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-right: 2%;
-    cursor: url('cursor-1.png'), auto; 
-}
-
-input {
-    border-radius: 5px;
-    font-size: 1.5rem;
-    cursor: url('cursor-1.png'), auto; 
-}
-
-.search-container {
-    position:absolute;
-    top: 5%;
-    left: 2%;
-    display: flex;
-    margin-right: 100%;
-    cursor: url('cursor-1.png'), auto; 
-}
-
-.icon{
-    cursor: url('cursor-1.png'), auto; 
-    font-size: 20px;
-    transition: transform 0.3s ease;
-}
-
-.icon:hover{
-    transform: scale(1.2);
-    cursor: url('cursor-1.png'), auto; 
-}
-
-label{
-    display: flex;
-    cursor: url('cursor-1.png'), auto; 
-}
-
-.bird-container {
-    position: absolute;
-    top: 25%;
-    left: 2%;
-    width: 250px;
-    height: 370px;
-    background-color: silver;
-    padding: 20px;
-    border-radius: 10px;
-    cursor: url('cursor-1.png'), auto; 
-}
-
-.leaderboard-container {
-    position: absolute;
-    top: 25%;
-    right: 2%;
+.leaderboardContainer {
+    position: fixed;
+    top: 15%;
+    right: 5%;
     width: 350px;
-    height: 300px;
-    background-color: silver;
-    padding: 20px;
-    border-radius: 10px;
-    cursor: url('cursor-1.png'), auto; 
-}
-
-.leaderboard-info {
-    margin-left: 35%; 
-    font-size: 20px; 
-    color: gray;
-    cursor: url('cursor-1.png'), auto; 
-
-}
-
-.bird-list p,
-.leaderboard-list p {
-    font-size: 18px;
-    margin-bottom: 10px;
-    border: 1px solid black;
-    cursor: url('cursor-1.png'), auto; 
-}
-
-p {
+    height: 350px;
+    background-color: lightblue;
     padding: 10px;
-    cursor: url('cursor-1.png'), auto; 
+    border-radius: 10px;
+}
+.leaderboard-info {
+    margin-left: 45%; 
+    font-size: 20px; 
+    color: gray; 
 }

@@ -8,7 +8,6 @@ body{
     background-size: cover;
     overflow:hidden;
     background-position: 40%;
-    cursor: url('cursor-1.png'), auto; 
 }
 
 h1{
@@ -21,7 +20,6 @@ h1{
     left: 20%;
     top: -1%;
     transform: translate(-50%, 50%);
-    cursor: url('cursor-1.png'), auto; 
 }
 
 .tilbake{
@@ -35,13 +33,11 @@ h1{
     background-color: black;
     border: gray groove;
     user-select: none;
-    cursor: url('cursor-1.png'), auto; 
 }
 
 .tilbake:hover{
     cursor: pointer;
     box-shadow: 0 0 10px 5px white;
-    cursor: url('cursor-1.png'), auto; 
 }
 
 .hjem{
@@ -55,13 +51,11 @@ h1{
     border: gray groove;
     user-select: none;
     background-color: black;
-    cursor: url('cursor-1.png'), auto; 
 }
     
 .hjem:hover {
     cursor: pointer;
     box-shadow: 0 0 10px 5px white;
-    cursor: url('cursor-1.png'), auto; 
 }
 
 .container{
@@ -72,7 +66,6 @@ h1{
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    cursor: url('cursor-1.png'), auto; 
 }
 
 .img{
@@ -84,7 +77,6 @@ h1{
     top: -12%;
     transform: translate(-50%, 50%);
     box-shadow: 0 0 10px 5px black;
-    cursor: url('cursor-1.png'), auto; 
 }
 
 .fugleInfo{
@@ -100,5 +92,4 @@ h1{
     left: 75%;
     top: 2%;
     transform: translate(-50%, 50%);
-    cursor: url('cursor-1.png'), auto; 
 }
