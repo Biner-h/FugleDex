@@ -171,15 +171,12 @@ h1 {
 
 .birdNotFound {
     filter: grayscale(100%); 
-    opacity: 0%;
-    pointer-events: none;
+    opacity: 75%;
     cursor: url('cursor-1.png'), auto; 
 }
 
 #birdName{
-    opacity: 0;
     text-align: center;
     margin-right: 10%;
-    pointer-events: none;
     cursor: url('cursor-1.png'), auto; 
 }
