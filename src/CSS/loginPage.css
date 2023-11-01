@@ -8,10 +8,14 @@ body {
     background-size: cover;
     overflow: hidden;
     background: no-repeat fixed 100% 100%;
+    cursor: url('cursor-1.png'), auto; 
+
 }
 
 .container {
     text-align: center;
+    cursor: url('cursor-1.png'), auto; 
+
 }
 
 .Field{
@@ -19,6 +23,7 @@ body {
     flex-direction: row;
     align-items: center;
     margin: 10px;
+    cursor: url('cursor-1.png'), auto; 
 }
 
 .Field label {
@@ -33,31 +38,37 @@ body {
     border-radius: 20px;
     width: 100%;
     padding: 5px;
+    cursor: url('cursor-1.png'), auto; 
 }
 
 .input{
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    cursor: url('cursor-1.png'), auto; 
 }
 
 .txt{
     color: white;
     font-size: 1.7rem;
     margin-right: 10px;
+    width: 253px;
+    cursor: url('cursor-1.png'), auto; 
 }
 
 .button-container {
     margin: 10px;
     margin-left: 50%;
+    cursor: url('cursor-1.png'), auto; 
 }
 
 .knapp {
-    padding: 6px 12px;
+    padding: 8px 14px;
     margin: 5px;
     background-color: black;
     color: white;
+    cursor: url('cursor-1.png'), auto; 
 }
 
 .knapp:hover{
     box-shadow: 0 0 10px 5px white;
-    cursor: pointer;
+    cursor: url('cursor-1.png'), auto; 
 }

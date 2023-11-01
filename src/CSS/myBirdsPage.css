@@ -6,6 +6,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     overflow:hidden;
+    cursor: url('cursor-1.png'), auto; 
 }
 
 .container {
@@ -16,6 +17,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+    cursor: url('cursor-1.png'), auto; 
 }
 h1 {
     color: rgb(255, 255, 255); 
@@ -24,6 +26,7 @@ h1 {
     user-select: none;
     font-size: 2.5rem;
     margin-top: 0.5%;
+    cursor: url('cursor-1.png'), auto; 
 }
 
 .sorterKnapp {
@@ -35,11 +38,13 @@ h1 {
     background-color: black;
     border: gray groove;
     user-select: none;
+    cursor: url('cursor-1.png'), auto; 
 }
 
 .sorterKnapp:hover {
     cursor: pointer;
     box-shadow: 0 0 10px 5px white;
+    cursor: url('cursor-1.png'), auto; 
 }
 
 .dropdown {
@@ -52,6 +57,7 @@ h1 {
     left: 70%;
     top: 5%;
     transform: translate(-50%, 50%);
+    cursor: url('cursor-1.png'), auto; 
   }
   
   .dropdown-content {
@@ -68,15 +74,18 @@ h1 {
     margin-right: 100px;
     border-radius: 10%;
     user-select: none;
+    cursor: url('cursor-1.png'), auto; 
   }
 
   .show {
     visibility: visible;
+    cursor: url('cursor-1.png'), auto; 
   }
 
 .sorterEtter{
     font-size: 1.4rem;
     font-weight: 600;
+    cursor: url('cursor-1.png'), auto; 
 }
 
 .sorterFilter{
@@ -87,6 +96,7 @@ h1 {
     height: 20px;
     border-radius: 20px;
     text-align: center;
+    cursor: url('cursor-1.png'), auto; 
 }
 .sorterFilter:hover
 {
@@ -97,6 +107,7 @@ h1 {
     height: 20px;
     border-radius: 20px;
     text-align: center;
+    cursor: url('cursor-1.png'), auto; 
 }
 
 .home {
@@ -111,10 +122,12 @@ h1 {
     user-select: none;
     background-color: black;
     z-index: 1;
+    cursor: url('cursor-1.png'), auto; 
+
 }
 
 .home:hover {
-    cursor: pointer;
+    cursor: url('cursor-1.png'), auto; 
     box-shadow: 0 0 10px 5px white;
 }
 
@@ -127,6 +140,7 @@ h1 {
     align-content: flex-start;
     gap: 2%;
     height: 100%;
+    cursor: url('cursor-1.png'), auto; 
 }
  
 .box {
@@ -139,10 +153,11 @@ h1 {
     color: white;
     font-size: 1.1rem;
     font-weight: 600;
+    cursor: url('cursor-1.png'), auto; 
 }
 
 .box :hover {
-    cursor:grab;
+    cursor: url('cursor-1.png'), auto; 
     transform: scale(103%);
 }
 
@@ -151,17 +166,17 @@ h1 {
     height: 100%;
     aspect-ratio: 1/1;
     border-radius: 10%;
+    cursor: url('cursor-1.png'), auto; 
 }
 
 .birdNotFound {
     filter: grayscale(100%); 
-    opacity: 0%;
-    pointer-events: none
+    opacity: 75%;
+    cursor: url('cursor-1.png'), auto; 
 }
 
 #birdName{
-    opacity: 0;
     text-align: center;
     margin-right: 10%;
-    pointer-events: none
+    cursor: url('cursor-1.png'), auto; 
 }

@@ -36,14 +36,9 @@ function updateView(){
             model.app.pageOrigin = "myBirds";
             break;
 
-        case "birdInfo":
+        default:
             updateBirdInfoView()
             swap("./src/CSS/birdInfoPage.css","Fugle info","src/Picture/bird_Info.jpg")
             break;
-            // default: throw "ERR";
     }
 }
-
-/*function changeBg(link){
-document.body.style.backgroundImage = "url("+link+")"
-}*/
