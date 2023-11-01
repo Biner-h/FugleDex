@@ -59,11 +59,11 @@ function validator()
             model.app.loggedInAs.name
             break;
         }
-        else if(model.data.accounts.length == model.data.accounts.length)
-        {
-            alert("Wrong username or password.");
-            return;
-        }
+    }
+    if(model.data.accounts.length == model.data.accounts.length)
+    {
+        alert("Wrong username or password.");
+        return;
     }
 
 }
