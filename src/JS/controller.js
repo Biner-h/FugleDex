@@ -47,13 +47,14 @@ const lifespan = () =>
 {
     model.app.sortedList = [...model.app.sortedList.sort((a,b) => b.li - a.li)]
 }
-///////////////////////////////////////////////////////////////////////////////
 
 function validator()
 {
     for(let i = 0; i != model.data.accounts.length; i++)
     {
-        if(model.data.accounts[i].user_Name == model.inputs.loginPage.user_Name && model.data.accounts[i].password == model.inputs.loginPage.password)
+        if(model.data.accounts[i].user_Name == model.inputs.loginPage.user_Name 
+            && 
+            model.data.accounts[i].password == model.inputs.loginPage.password)
         {
             fortsett("home");
             model.app.loggedInAs.name
@@ -65,7 +66,6 @@ function validator()
         alert("Wrong username or password.");
         return;
     }
-
 }
 
 
