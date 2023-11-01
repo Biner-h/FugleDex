@@ -42,12 +42,11 @@ h1 {
 }
 
 .sorterKnapp:hover {
-    cursor: pointer;
-    box-shadow: 0 0 10px 5px white;
     cursor: url('cursor-1.png'), auto; 
+    box-shadow: 0 0 10px 5px white;
 }
 
-.dropdown {
+.dropdown { 
     z-index: 1;
     display: flex;
     align-items: center;
@@ -80,7 +79,8 @@ h1 {
   .show {
     visibility: visible;
     cursor: url('cursor-1.png'), auto; 
-  }
+
+}
 
 .sorterEtter{
     font-size: 1.4rem;
@@ -123,12 +123,11 @@ h1 {
     background-color: black;
     z-index: 1;
     cursor: url('cursor-1.png'), auto; 
-
 }
 
 .home:hover {
-    cursor: url('cursor-1.png'), auto; 
     box-shadow: 0 0 10px 5px white;
+    cursor: url('cursor-1.png'), auto; 
 }
 
 .birds {
@@ -157,8 +156,8 @@ h1 {
 }
 
 .box :hover {
-    cursor: url('cursor-1.png'), auto; 
     transform: scale(103%);
+    cursor: url('cursor-1.png'), auto; 
 }
 
 .box img {

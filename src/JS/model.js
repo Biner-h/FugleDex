@@ -5,7 +5,7 @@ const body = document.body;
 const birds = document.querySelector('.birds');
 const model = {
     app: {
-        currentPage:"startPage",
+        currentPage:"myBirds",
         pageOrigin:"",
         loggedInUser: "Linn",
         currentBird:null,
@@ -51,9 +51,9 @@ const model = {
         accounts: [{
             accountId:0,
             name: "Linn",
-            user_Name:"LinnBird123",
+            user_Name:"",
             e_mail:"Linn123@Birdmail.org",
-            password:"ILOVEBIRDS123",
+            password:"",
             birdsFound:[0,1,5,2,2,2,7],
         },
 
