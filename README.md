@@ -1,14 +1,14 @@
 # FugleDex
-- ./Pidove.webp
+- A Graphical user interface for bird
 
 # Team credits
 
--
+- 
 
--
+- 
 
--
+- 
 
--
+- 
 
--
+- 
