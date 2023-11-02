@@ -23,6 +23,7 @@ body {
 #loggetInn{
     color: white;
     font-size: 1.5rem;
+    font-weight: 600;
     margin: 10px;
     position: relative;
     user-select: none;
@@ -73,7 +74,7 @@ body {
 .foundBtn{
     margin: 20px;
     color: rgb(255, 255, 255);
-    font-size: 1.9rem;
+    font-size: 1.7rem;
     font-weight: 600;
     position: relative;
     background-color: black;
@@ -90,7 +91,7 @@ body {
     margin: 20px;
     position: relative;
     color: rgb(255, 255, 255);
-    font-size: 1.9rem;
+    font-size: 1.7rem;
     font-weight: 600;
     background-color: black;
     border: gray groove;
@@ -104,7 +105,7 @@ body {
 
 .fugledex{
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 600;
     margin-right: 2%;
     cursor: url('cursor-1.png'), auto; 
@@ -144,24 +145,24 @@ label{
 .bird-container {
     position: absolute;
     top: 25%;
-    left: 2%;
-    width: 250px;
+    left: 5%;
+    width: 350px;
     height: 370px;
     background-color: silver;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 20px;
     cursor: url('cursor-1.png'), auto; 
 }
 
 .leaderboard-container {
     position: absolute;
     top: 25%;
-    right: 2%;
+    right: 5%;
     width: 350px;
     height: 300px;
     background-color: silver;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 20px;
     cursor: url('cursor-1.png'), auto; 
 }
 
@@ -184,4 +185,13 @@ label{
 p {
     padding: 10px;
     cursor: url('cursor-1.png'), auto; 
+}
+
+.img{
+    position: absolute;
+    top: 65%;
+    left: 84%;
+    transform: translate(-50%, 50%);
+    width: 400px;
+    opacity: 75%;
 }
