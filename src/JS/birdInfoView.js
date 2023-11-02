@@ -1,23 +1,25 @@
+
 function updateBirdInfoView(){
+    let birdToShow = model.data.birds.find((bird) => bird.id === model.app.currentBird)
     document.getElementById("app").innerHTML = /*HTML*/`
     <div class="container">
         <h1>Fugle info</h1>
         <h2 class="tilbake" onclick="tilbake()">Tilbake</h2>
         <h2 class="hjem" onclick="fortsett('home')">Hjem</h2>
-        <img class="img" src="${model.app.sortedList[model.app.currentBird].image}">
+        <img class="img" src="${birdToShow.image}">
         <div class="fugleInfo">
-            <h2>${model.app.sortedList[model.app.currentBird].bird_Name}</h2>
-            <p>Levetid: ${model.app.sortedList[model.app.currentBird].life_Span}</p>
-            <p>Vekt: ${model.app.sortedList[model.app.currentBird].weight}</p>
-            <p>Fart: ${model.app.sortedList[model.app.currentBird].speed_Descriptor}</p>
-            <p>Størrelse: ${model.app.sortedList[model.app.currentBird].size}</p>
-            <p>Bosted: ${model.app.sortedList[model.app.currentBird].area}</p>
+            <h2>${birdToShow.bird_Name}</h2>
+            <p>Levetid: ${birdToShow.life_Span}</p>
+            <p>Vekt: ${birdToShow.weight}</p>
+            <p>Fart: ${birdToShow.speed_Descriptor}</p>
+            <p>Størrelse: ${birdToShow.size}</p>
+            <p>Bosted: ${birdToShow.area}</p>
         </div>
     </div>`
 }
 
-function showBirdInfo(index){
-    model.app.currentBird = index
+function showBirdInfo(birdId){
+    model.app.currentBird = birdId
     fortsett('birdInfo')
     updateView()
 }

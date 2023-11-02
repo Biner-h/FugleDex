@@ -161,9 +161,8 @@ h1 {
 }
 
 .box img {
-    width: 100%;
+    width: 200px;
     height: 100%;
-    aspect-ratio: 1/1;
     border-radius: 10%;
     cursor: url('cursor-1.png'), auto; 
 }

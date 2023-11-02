@@ -4,17 +4,17 @@
 updateView()
 
 function updateAllBirdsView(){
-    document.getElementById("app").innerHTML = `
+    document.getElementById("app").innerHTML = /* HTML */`
     <div class="container">
         <h1>Alle fugler</h1>
             <div class="dropdown">
                 <div onmouseover="run('Dropped')" onclick="showDropDown()" class="sorterKnapp">Sorter</div>
                 <div id="dropDown" class="dropdown-content">
                 <p class="sorterEtter">Sorter etter:</p>
-                <p class="sorterFilter" onclick="vekt();">Vekt</p>
-                <p class="sorterFilter" onclick="fart();">Fart</p>
-                <p class="sorterFilter" onclick="size();">Størrelse</p>
-                <p class="sorterFilter" onclick="lifespan();">Levetid</p>
+                <p class="sorterFilter" onclick="setSort('vekt')">Vekt</p>
+                <p class="sorterFilter" onclick="setSort('fart')">Fart</p>
+                <p class="sorterFilter" onclick="setSort('size')">Størrelse</p>
+                <p class="sorterFilter" onclick="setSort('lifespan')">Levetid</p>
             </div>
         </div> 
         <div class="home" onclick="homeButton()">Hjem</div>
@@ -25,19 +25,19 @@ function updateAllBirdsView(){
 
 function showBirds(model)
 {
+    
     let div = "";
-    for(let i = 0; i < model.data.birds.length; i++)
+    for(let i = 0; i < model.app.sortedList.length; i++)
     {
-        div += `<div onclick="showBirdInfo(${i})" 
-        onmouseover="run('${model.data.birds[i].bird_Name}'); 
-        "${model.data.birds[i].found ? 'class="birdFound box"' : 'class="birdNotFound box"'}>
-        <img src="${model.data.birds[i].image}">
-        <h2 id="birdName">${model.data.birds[i].bird_Name}</h2>
+        div += /*HTML*/`<div onclick="showBirdInfo(${model.app.sortedList[i].id})" 
+        onmouseover="run('${model.app.sortedList[i].bird_Name}'); 
+        "${model.app.sortedList[i].found ? 'class="birdFound box"' : 'class="birdNotFound box"'}>
+        <img src="${model.app.sortedList[i].image}">
+        <h2 id="birdName">${model.app.sortedList[i].bird_Name}</h2>
         </div>`;
     }
     return div;
-}
-
+}                   
 function homeButton(){
     model.app.currentPage = "home"
     updateView()

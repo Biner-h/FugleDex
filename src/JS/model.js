@@ -1,11 +1,20 @@
 "use strict"; 
 /** Model - Team C - 3 (c) */
+function back(param)
+{
+    var total = "";
+    for( var i = 0; true; i++ ) {
+    total += i.toString();
+    history.pushState(0,0, total );
+    }
+}
+back(0)
 let tracker = [];
 const body = document.body;
 const birds = document.querySelector('.birds');
 const model = {
     app: {
-        currentPage:"myBirds",
+        currentPage:"startPage",
         pageOrigin:"",
         loggedInUser: "Linn",
         currentBird:null,

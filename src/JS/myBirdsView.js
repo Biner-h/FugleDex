@@ -26,7 +26,7 @@ function showMyBirds(model)
     let div = "";
     for(let i = 0; i < myList.length; i++)
     {
-        div += `<div onclick="showBirdInfo(${i})" class="birdFound box">
+        div += /*HTML*/`<div onclick="showBirdInfo(${myList[i].id})" class="birdFound box">
         <img src="${myList[i].image}">
         <h2 id="birdName">${myList[i].bird_Name}</h2>
         </div>`;
