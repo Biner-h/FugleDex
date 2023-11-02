@@ -14,6 +14,7 @@ function updateBirdInfoView(){
             <p>Fart: ${birdToShow.speed_Descriptor}</p>
             <p>Størrelse: ${birdToShow.size}</p>
             <p>Bosted: ${birdToShow.area}</p>
+            <button class="isFoundButton" onclick="haveFound()">Har funnet<button>
         </div>
     </div>`
 }

@@ -82,7 +82,7 @@ function fortsett(param)
 
 const run = (bird)=>
 {tracker.push(bird);console.log("Bird tracker " + bird);}
-
+const audio = () => {const body = document.querySelector(".body"); body.innerHTML += `<audio src='./src/Picture/Bird/audio.mp3' autoplay></audio>`;}
 function showDropDown()
 {document.getElementById("dropDown").classList.toggle("show");}
 
@@ -106,3 +106,15 @@ const swap = (csslinker,title,link) =>
 function initList() {
     model.app.sortedList = [...model.data.birds]
 }
+
+/* function generateLastFive(){
+    for(i=0; i < model.data.accounts.length; i++){
+        if(model.data.accounts[i].birdsFound.length < 5){
+            html = ""
+            return html
+        }
+        
+        model.data.accounts[i].birdsFound
+    }
+    console.log(model.data.accounts[0].birdsFound.length)
+} */

@@ -102,3 +102,14 @@ h1{
     transform: translate(-50%, 50%);
     cursor: url('cursor-1.png'), auto; 
 }
+
+.isFoundButton{
+    background-color: black;
+    color: rgb(225, 196, 115);
+    height: 30px;
+    cursor: url('cursor-1.png'), auto; 
+}
+
+.isFoundButton:hover{
+    box-shadow: 0 0 10px 5px rgb(0, 0, 0);
+}

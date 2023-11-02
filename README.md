@@ -1,7 +1,7 @@
 # FugleDex
-- A Graphical user interface for bird
+- A Graphical user interface for bird to catch birds and bird facts.
 
-# Team credits
+# develuper credits
 
 - Pål Svendsen
 

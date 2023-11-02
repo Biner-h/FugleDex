@@ -1,3 +1,4 @@
+
 function updateHomePageView(){
     document.getElementById("app").innerHTML = /*HTML*/ `
         <div class="search-container">
@@ -22,7 +23,7 @@ function updateHomePageView(){
         <div class="bird-container">
             <h2>Mine 5 siste fugler: </h2>
             <div class="bird-list">
-                <p>Toca Toucan</p>
+                <p>Toco</p>
                 <p>Kjøttmeis</p>
                 <p>Blåmeis</p>
                 <p>Kongeørn</p>
@@ -41,13 +42,12 @@ function updateHomePageView(){
             </div>
         </div>`
 }
-
 function toggleDropdown() {
     dropdownMenu = document.querySelector('.dropdown-menu');
     dropdownMenu.style.display = (dropdownMenu.style.display === 'none' || dropdownMenu.style.display === '') ? 'block' : 'none';
 }
-
 function search(){
     alert('Ingen fugler funnet')
 }
+
 

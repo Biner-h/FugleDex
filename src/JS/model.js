@@ -2,6 +2,7 @@
 /** Model - Team C - 3 (c) */
 let tracker = [];
 let e;
+const lastFive = [];
 const body = document.body;
 const birds = document.querySelector('.birds');
 const model = {
