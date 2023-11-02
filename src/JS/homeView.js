@@ -12,7 +12,7 @@ function updateHomePageView(){
 <label for="logg" id="loggetInn">Logget inn som: 
 <div id="logg" class="dropdownhome">
 </label>
-    <div class="dropdown-toggle" onclick="toggleDropdown()">Linn </div>
+    <div class="dropdown-toggle" onclick="toggleDropdown()">${model.app.loggedInUser}</div>
     <div class="dropdown-menu">
         <div class="dropdown-item" onclick="fortsett('startPage')">Logg Ut</div>
     </div>
@@ -49,3 +49,4 @@ function toggleDropdown() {
 function search(){
     alert('Ingen fugler funnet')
 }
+

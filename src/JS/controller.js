@@ -53,11 +53,12 @@ function validator()
             && 
             model.data.accounts[i].password == model.inputs.loginPage.password)
         {
+            model.app.loggedInUser = model.data.accounts[i].name;
             fortsett("home");
-            model.app.loggedInAs.name
             break;
         }
     }
+
     if(model.data.accounts.length == model.data.accounts.length)
     {
         alert("Wrong username or password.");
@@ -65,6 +66,10 @@ function validator()
     }
 }
 
+function regValidator()
+{
+    const root = model.data.accounts[model.data.accounts.length];
+}
 
 function fortsett(param)
 {
@@ -86,7 +91,7 @@ const swap = (csslinker,title,link) =>
     console.log(csslinker)
     console.log(title)
     const linker = document.querySelector('.headerTag');
-    linker.innerHTML = `
+    linker.innerHTML = /*HTML*/`
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="${csslinker}">

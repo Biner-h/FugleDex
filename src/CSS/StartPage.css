@@ -32,7 +32,7 @@ body
     top: 59%;
     left: 50%;
     transform: translate(-50%, 50%);
-    text-shadow: 0 10px 5px black;
+    text-shadow: 0 0 10px black;
     cursor: url('cursor-1.png'), auto; 
 }
 

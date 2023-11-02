@@ -146,6 +146,7 @@ h1 {
     margin-top: 5%;
     width: 20%;
     height: 23%;
+    margin-left: 10px;
     border-radius: 20%;
     background-color: #cccccc00;
     user-select: none;
@@ -177,4 +178,5 @@ h1 {
     text-align: center;
     margin-right: 10%;
     cursor: url('cursor-1.png'), auto; 
+    text-shadow: 0 10px 5px black;
 }

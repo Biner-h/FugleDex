@@ -164,6 +164,7 @@ h1 {
     width: 200px;
     height: 100%;
     border-radius: 10%;
+    margin-left: 15%;
     cursor: url('cursor-1.png'), auto; 
 }
 
@@ -177,4 +178,5 @@ h1 {
     text-align: center;
     margin-right: 10%;
     cursor: url('cursor-1.png'), auto; 
+    text-shadow: 0 10px 5px black;
 }

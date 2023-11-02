@@ -1,22 +1,14 @@
 "use strict"; 
 /** Model - Team C - 3 (c) */
-function back(param)
-{
-    var total = "";
-    for( var i = 0; true; i++ ) {
-    total += i.toString();
-    history.pushState(0,0, total );
-    }
-}
-back(0)
 let tracker = [];
+let e;
 const body = document.body;
 const birds = document.querySelector('.birds');
 const model = {
     app: {
         currentPage:"startPage",
         pageOrigin:"",
-        loggedInUser: "Linn",
+        loggedInUser: "",
         currentBird:null,
         sortMethod:"size",
         sortedList:[],
@@ -34,10 +26,11 @@ const model = {
         },
         
         registerPage: {
+            accountId:0,
             user_Name: '',
             e_mail: '',  
             password:'', 
-            Confirm_Password: '',
+            
         },
 
         homePage: {
@@ -74,13 +67,44 @@ const model = {
             password:"ChoreiElsker",
             birdsFound:[0,1,3],
         },
-
         {
             accountId:2,
             name: "Terje",
             user_Name:"prog_Bird",
             e_mail:"terje@Birdmail.org",
             password:"JavascriptElsker",
+            birdsFound:[1,0],
+        },
+        {
+            accountId:3,
+            name: "Torstein",
+            user_Name:"Tor_Bird",
+            e_mail:"tor@Birdmail.org",
+            password:"cppElsker",
+            birdsFound:[1,2,5],
+        },
+        {
+            accountId:4,
+            name: "Biner",
+            user_Name:"biner",
+            e_mail:"biner@Birdmail.org",
+            password:"1",
+            birdsFound:[1,0,4,2,6,],
+        },
+        {
+            accountId:5,
+            name: "Nirujan",
+            user_Name:"LazyBird",
+            e_mail:"niru@Birdmail.org",
+            password:"Birdylover",
+            birdsFound:[1,4,3],
+        },
+        {
+            accountId:6,
+            name: "Pål",
+            user_Name:"pal_Bird",
+            e_mail:"pal@Birdmail.org",
+            password:"PSlover",
             birdsFound:[1,0],
         },
     ],
