@@ -77,7 +77,7 @@ body {
     font-size: 1.7rem;
     font-weight: 600;
     position: relative;
-    background-color: black;
+    background-color: rgb(56, 56, 56);
     border: gray groove;
     cursor: url('cursor-1.png'), auto; 
 }
@@ -93,7 +93,7 @@ body {
     color: rgb(255, 255, 255);
     font-size: 1.7rem;
     font-weight: 600;
-    background-color: black;
+    background-color: rgb(56, 56, 56);
     border: gray groove;
     cursor: url('cursor-1.png'), auto; 
 }
@@ -171,7 +171,7 @@ label{
 .leaderboard-info {
     margin-left: 35%; 
     font-size: 20px; 
-    color: gray;
+    color: lightgray;
     cursor: url('cursor-1.png'), auto; 
 
 }
