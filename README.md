@@ -3,7 +3,7 @@
 
 - We use a JS object in the model.js as a dummy back-end.
 
-# develuper credits
+# developer credits
 
 - Pål Svendsen
 
