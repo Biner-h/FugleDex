@@ -82,7 +82,7 @@ function fortsett(param)
 
 const run = (bird)=>
 {tracker.push(bird);console.log("Bird tracker " + bird);}
-const audio = () => {const body = document.querySelector(".body"); body.innerHTML += `<audio src='./src/Picture/Bird/audio.mp3' autoplay></audio>`;}
+
 function showDropDown()
 {document.getElementById("dropDown").classList.toggle("show");}
 
@@ -118,3 +118,19 @@ function initList() {
     }
     console.log(model.data.accounts[0].birdsFound.length)
 } */
+
+const birdsFound = [5,2,2,2,7,3,1]
+    const birdsFound2 = [2,3]
+
+    updateView()
+    function updateView(){
+        let html = "";
+        html += `<div>${checkIfLastFive(birdsFound)}</div>
+        <div>${checkIfLastFive(birdsFound2)}</div>
+        `
+        document.getElementById('app').innerHTML = html;
+    }
+    
+    function checkIfLastFive(arr){
+        return arr.slice(-5);
+    }

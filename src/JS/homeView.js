@@ -42,12 +42,28 @@ function updateHomePageView(){
             </div>
         </div>`
 }
+
 function toggleDropdown() {
     dropdownMenu = document.querySelector('.dropdown-menu');
     dropdownMenu.style.display = (dropdownMenu.style.display === 'none' || dropdownMenu.style.display === '') ? 'block' : 'none';
 }
+
 function search(){
     alert('Ingen fugler funnet')
 }
 
+const birdsFound = [5,2,2,2,7,3,1]
+    const birdsFound2 = [2,3]
 
+    updateView()
+    function updateView(){
+        let html = "";
+        html += `<div>${checkIfLastFive(birdsFound)}</div>
+        <div>${checkIfLastFive(birdsFound2)}</div>
+        `
+        document.getElementById('app').innerHTML = html;
+    }
+    
+    function checkIfLastFive(arr){
+        return arr.slice(-5);
+    }

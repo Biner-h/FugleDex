@@ -1,5 +1,7 @@
 # FugleDex
-- A Graphical user interface for bird to catch birds and bird facts.
+- A Graphical user interface for catching birds and finding bird facts.
+
+- We use a JS object in the model.js as a dummy back-end.
 
 # develuper credits
 
