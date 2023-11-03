@@ -4,7 +4,7 @@
 updateView()
 
 function updateAllBirdsView(){
-    document.getElementById("app").innerHTML = /* HTML */`
+    model.app.linker.innerHTML = /* HTML */`
     <div class="container">
         <h1>Alle fugler</h1>
             <div class="dropdown">

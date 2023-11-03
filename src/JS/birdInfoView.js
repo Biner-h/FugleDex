@@ -1,7 +1,7 @@
 
 function updateBirdInfoView(){
     let birdToShow = model.data.birds.find((bird) => bird.id === model.app.currentBird)
-    document.getElementById("app").innerHTML = /*HTML*/`
+    model.app.linker.innerHTML = /*HTML*/`
     <div class="container">
         <h1>Fugle info</h1>
         <h2 class="tilbake" onclick="tilbake()">Tilbake</h2>

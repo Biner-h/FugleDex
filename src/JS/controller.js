@@ -70,6 +70,7 @@ function validator()
 function regValidator()
 {
     const root = model.data.accounts[model.data.accounts.length];
+    console.log();
 }
 
 function fortsett(param)
@@ -77,8 +78,6 @@ function fortsett(param)
     model.app.currentPage = param
     updateView()
 }
-
-
 
 const run = (bird)=>
 {tracker.push(bird);console.log("Bird tracker " + bird);}
@@ -104,33 +103,5 @@ const swap = (csslinker,title,link) =>
 }
 
 function initList() {
-    model.app.sortedList = [...model.data.birds]
+    model.app.sortedList = [...model.data.birds];
 }
-
-/* function generateLastFive(){
-    for(i=0; i < model.data.accounts.length; i++){
-        if(model.data.accounts[i].birdsFound.length < 5){
-            html = ""
-            return html
-        }
-        
-        model.data.accounts[i].birdsFound
-    }
-    console.log(model.data.accounts[0].birdsFound.length)
-} */
-
-const birdsFound = [5,2,2,2,7,3,1]
-    const birdsFound2 = [2,3]
-
-    updateView()
-    function updateView(){
-        let html = "";
-        html += `<div>${checkIfLastFive(birdsFound)}</div>
-        <div>${checkIfLastFive(birdsFound2)}</div>
-        `
-        document.getElementById('app').innerHTML = html;
-    }
-    
-    function checkIfLastFive(arr){
-        return arr.slice(-5);
-    }

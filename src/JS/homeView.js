@@ -1,6 +1,5 @@
-
 function updateHomePageView(){
-    document.getElementById("app").innerHTML = /*HTML*/ `
+    model.app.linker.innerHTML = /*HTML*/ `
         <div class="search-container">
             <label for="text" class="fugledex">Fugledex: 
                 <input type="text" id="search" placeholder="Finn fugl..."><div class="icon" onclick="search()">🔍</div>
@@ -15,8 +14,8 @@ function updateHomePageView(){
             </label>
             <div class="dropdown-toggle" onclick="toggleDropdown()">${model.app.loggedInUser}</div>
             <div class="dropdown-menu">
-            <div class="dropdown-item" onclick="fortsett('startPage')">Logg Ut</div>
-        </div>
+                <div class="dropdown-item" onclick="fortsett('startPage')">Logg Ut</div>
+            </div>
         </div>
         </div>
 
@@ -51,19 +50,3 @@ function toggleDropdown() {
 function search(){
     alert('Ingen fugler funnet')
 }
-
-const birdsFound = [5,2,2,2,7,3,1]
-    const birdsFound2 = [2,3]
-
-    updateView()
-    function updateView(){
-        let html = "";
-        html += `<div>${checkIfLastFive(birdsFound)}</div>
-        <div>${checkIfLastFive(birdsFound2)}</div>
-        `
-        document.getElementById('app').innerHTML = html;
-    }
-    
-    function checkIfLastFive(arr){
-        return arr.slice(-5);
-    }

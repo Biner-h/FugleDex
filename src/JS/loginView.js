@@ -1,5 +1,7 @@
+"use strict";
+
 function updateLoginPageView(){
-    document.getElementById("app").innerHTML = /*HTML*/`
+    model.app.linker.innerHTML = /*HTML*/`
     <div class="container">
         <div class="Field">
             <div class="txt">Brukernavn:</div>

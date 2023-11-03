@@ -2,11 +2,11 @@
 /** Model - Team C - 3 (c) */
 let tracker = [];
 let e;
-const lastFive = [];
 const body = document.body;
 const birds = document.querySelector('.birds');
 const model = {
     app: {
+        linker: document.querySelector('.app'),
         currentPage:"startPage",
         pageOrigin:"",
         loggedInUser: "",
@@ -29,6 +29,7 @@ const model = {
         registerPage: {
             accountId:0,
             user_Name: '',
+            name: '',
             e_mail: '',  
             password:'', 
             
@@ -57,7 +58,7 @@ const model = {
             user_Name:"",
             e_mail:"Linn123@Birdmail.org",
             password:"",
-            birdsFound:[0,1,5,2,2,2,7],
+            birdsFound:[0,1,5,6,4,3,7],
         },
 
         {

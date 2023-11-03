@@ -1,6 +1,13 @@
+"use strict";
+
 function updateRegisterPageView(){
-  document.getElementById("app").innerHTML = /*HTML*/`
+  model.app.linker.innerHTML = /*HTML*/`
     <div class="container">
+
+      <div class="Field">
+        <div class="txt">Navn:</div>
+        <input type="text" onchange="model.inputs.registerPage.name = this.value" class="input"  placeholder="Navn">
+      </div>
 
       <div class="Field">
         <div class="txt">Brukernavn:</div>
@@ -23,7 +30,7 @@ function updateRegisterPageView(){
       </div>
       
       <div class="button-container">
-        <button class="knapp" onclick="model.data.accounts.push(model.inputs.registerPage); fortsett('login');" onclick="fortsett('login')">Lag profil</button>
+        <button class="knapp" onclick="model.data.accounts.push(model.inputs.registerPage); fortsett('login');" >Lag profil</button>
       </div>
     </div>`
 }

@@ -1,3 +1,5 @@
+"use strict";
+
 function updateView(){
     switch(model.app.currentPage)
     {
