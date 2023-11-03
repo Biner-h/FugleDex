@@ -26,6 +26,29 @@ function setSort(sortType){
     updateView()
 }
 
+const clear_registration = ()=>
+{
+    model.inputs.registerPage.user_Name = "";
+    model.inputs.registerPage.name = "";
+    model.inputs.registerPage.password = "";
+    model.inputs.registerPage.e_mail = "";
+}
+
+const clear_login = ()=>
+{
+    model.inputs.loginPage.password = "";
+    model.inputs.loginPage.user_Name = "";
+}
+const signOut = () =>
+{
+    model.app.loggedInUser = "";
+}
+
+const upload = () =>
+{
+    model.data.accounts.push(model.inputs.registerPage);
+}
+
 const vekt = () =>
 {
     model.app.sortedList = [...model.app.sortedList.sort((a,b) => b.we - a.we)]
@@ -35,6 +58,7 @@ const fart = () =>
 {
     model.app.sortedList = [...model.app.sortedList.sort((a,b) => b.speed - a.speed)]
 }
+
 const size = () => 
 {
     model.app.sortedList = [...model.app.sortedList.sort((a,b) => b.si - a.si)]
@@ -85,7 +109,6 @@ const run = (bird)=>
 function showDropDown()
 {document.getElementById("dropDown").classList.toggle("show");}
 
-    
 const swap = (csslinker,title,link) =>
 {
     console.log(csslinker)

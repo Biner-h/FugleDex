@@ -6,6 +6,7 @@ function updateView(){
         case "startPage":
             updateStartPageView();
             swap("./src/CSS/StartPage.css","Startside","src/Picture/startPage.jpg")
+            clear_registration();
             break;
 
         case "login":
@@ -22,6 +23,8 @@ function updateView(){
             updateHomePageView()
             swap("./src/CSS/homePage.css","Hjem","src/Picture/home.jpg")
             model.app.pageOrigin = "home";
+            clear_registration();
+            clear_login();
             break;
 
         case "allBirds":

@@ -109,6 +109,14 @@ const model = {
             password:"PSlover",
             birdsFound:[1,0],
         },
+        {
+            accountId:7,
+            name: "Zoltan",
+            user_Name:"Zoltan",
+            e_mail:"zol@Birdmail.org",
+            password:"z",
+            birdsFound:[1,0],
+        },
     ],
     birds: [
 

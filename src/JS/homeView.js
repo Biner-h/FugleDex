@@ -14,7 +14,7 @@ function updateHomePageView(){
             </label>
             <div class="dropdown-toggle" onclick="toggleDropdown()">${model.app.loggedInUser}</div>
             <div class="dropdown-menu">
-                <div class="dropdown-item" onclick="fortsett('startPage')">Logg Ut</div>
+                <div class="dropdown-item" onclick="fortsett('startPage'); signOut();">Logg Ut</div>
             </div>
         </div>
         </div>

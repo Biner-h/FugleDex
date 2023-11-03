@@ -30,7 +30,7 @@ function updateRegisterPageView(){
       </div>
       
       <div class="button-container">
-        <button class="knapp" onclick="model.data.accounts.push(model.inputs.registerPage); fortsett('login');" >Lag profil</button>
+        <button class="knapp" onclick="upload(); fortsett('login');" >Lag profil</button>
       </div>
     </div>`
 }
