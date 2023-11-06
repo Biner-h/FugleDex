@@ -1,4 +1,4 @@
-function updateHomePageView(){
+function updateHomePageView() {
     model.app.linker.innerHTML = /*HTML*/ `
         <div class="search-container">
             <label for="text" class="fugledex">Fugledex: 
@@ -33,36 +33,33 @@ function updateHomePageView(){
                 <p>Eskil <span class="leaderboard-info">3 - Kjøttmeis</span></p>
                 <p>Terje<span class="leaderboard-info">2 - Toca Toucan</span></p>
             </div>
-        </div>`
+        </div>`;
 }
 
 function toggleDropdown() {
-    dropdownMenu = document.querySelector('.dropdown-menu');
-    dropdownMenu.style.display = (dropdownMenu.style.display === 'none' || dropdownMenu.style.display === '') ? 'block' : 'none';
+    dropdownMenu = document.querySelector(".dropdown-menu");
+    dropdownMenu.style.display =
+        dropdownMenu.style.display === "none" || dropdownMenu.style.display === ""
+            ? "block"
+            : "none";
 }
 
-function search(){
-    alert('Ingen fugler funnet')
+function search() {
+    alert("Ingen fugler funnet");
 }
-        
-function vista()
-{
-    let sliceable_Array = [];
+
+function vista() {
+    let birdsLength = model.data.accounts[model.app.logged_In_Identyfier].birdsFound.length;
     let current_Bird = 0;
     let e = "";
-    if (model.data.accounts[model.app.logged_In_Identyfier].name === model.app.loggedInUser)
-    {
-        for(let c = 0; c < model.data.accounts[model.app.logged_In_Identyfier].birdsFound.length; c++)
-        {
-            current_Bird = model.data.accounts[model.app.logged_In_Identyfier].birdsFound[c]
-           sliceable_Array[c] = `<p>${model.data.birds[current_Bird].bird_Name}</p>`;
+    if (model.data.accounts[model.app.logged_In_Identyfier].name === model.app.loggedInUser) {
+        for (let c = birdsLength - 1; c >= birdsLength - 5; c--) {
+            current_Bird = model.data.accounts[model.app.logged_In_Identyfier].birdsFound[c];
+            e += `<p>${model.data.birds[current_Bird].bird_Name}</p>`;
         }
-        e = sliceable_Array.slice(-5);
-        console.log(e)
+        console.log(e);
         return e;
-    }
-    else
-    {
+    } else {
         console.log("Error-404 innvalid token");
     }
 }
