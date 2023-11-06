@@ -47,7 +47,6 @@ function search(){
         
 function vista()
 {
-    /** model.data.accounts[model.app.logged_In_Identyfier].name === model.app.loggedInUser */
     let sliceable_Array = [];
     let current_Bird = 0;
     let e = "";
@@ -67,14 +66,3 @@ function vista()
         console.log("Error-404 innvalid token");
     }
 }
-
-// function checkIfLastFive(arr){
-//     return arr.slice(-5);
-// }
-
-
-// for(let i=0; i < model.data.accounts[model.app.logged_In_Identyfier].birdsFound.length; i++){
-//     if(model.data.accounts[model.app.logged_In_Identyfier].birdsFound[i] === model.birds.id){
-//         return model.birds.name
-//     }
-// } 
