@@ -105,22 +105,6 @@ function fortsett(param)
     updateView()
 }
 
-// function splicer(array,char)
-// {
-//     for(let i = 0; i != array.length; i++)
-//     {
-//         switch(char)
-//         {
-//             case char: 
-//             array[i].splice(i, 1);
-//             break;
-
-//             default:
-//         }
-//         return array;
-//     }
-// }
-
 const run = (bird)=>
 {tracker.push(bird);console.log("Bird tracker " + bird);}
 
