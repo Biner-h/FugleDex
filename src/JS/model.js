@@ -1,7 +1,6 @@
 "use strict"; 
 /** Model - Team C - 3 (c) */
 let tracker = [];
-let e;
 const body = document.body;
 const birds = document.querySelector('.birds');
 const model = {
@@ -9,6 +8,7 @@ const model = {
         linker: document.querySelector('.app'),
         currentPage:"startPage",
         pageOrigin:"",
+        logged_In_Identyfier: null,      //HVIS name = noe -> sett accountID til riktig "name"
         loggedInUser: "",
         currentBird:null,
         sortMethod:"size",

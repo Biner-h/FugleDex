@@ -21,13 +21,7 @@ function updateHomePageView(){
 
         <div class="bird-container">
             <h2>Mine 5 siste fugler: </h2>
-            <div class="bird-list">
-                <p>Toco</p>
-                <p>Kjøttmeis</p>
-                <p>Blåmeis</p>
-                <p>Kongeørn</p>
-                <p>Fossekall</p>
-            </div>
+            <div class="bird-list">${vista()}</div>
         </div>
 
         <img class="img" src="src/Picture/Bird/Greenbird-logo.png">
@@ -50,3 +44,37 @@ function toggleDropdown() {
 function search(){
     alert('Ingen fugler funnet')
 }
+        
+function vista()
+{
+    /** model.data.accounts[model.app.logged_In_Identyfier].name === model.app.loggedInUser */
+    let sliceable_Array = [];
+    let current_Bird = 0;
+    let e = "";
+    if (model.data.accounts[model.app.logged_In_Identyfier].name === model.app.loggedInUser)
+    {
+        for(let c = 0; c < model.data.accounts[model.app.logged_In_Identyfier].birdsFound.length; c++)
+        {
+            current_Bird = model.data.accounts[model.app.logged_In_Identyfier].birdsFound[c]
+           sliceable_Array[c] = `<p>${model.data.birds[current_Bird].bird_Name}</p>`;
+        }
+        e = sliceable_Array.slice(-5);
+        console.log(e)
+        return e;
+    }
+    else
+    {
+        console.log("Error-404 innvalid token");
+    }
+}
+
+// function checkIfLastFive(arr){
+//     return arr.slice(-5);
+// }
+
+
+// for(let i=0; i < model.data.accounts[model.app.logged_In_Identyfier].birdsFound.length; i++){
+//     if(model.data.accounts[model.app.logged_In_Identyfier].birdsFound[i] === model.birds.id){
+//         return model.birds.name
+//     }
+// } 
