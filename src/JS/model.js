@@ -91,7 +91,7 @@ const model = {
             user_Name:"biner",
             e_mail:"biner@Birdmail.org",
             password:"1",
-            birdsFound:[1,0,4,2,6,],
+            birdsFound:[1,0,4,2],
         },
         {
             accountId:5,
