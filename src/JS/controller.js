@@ -2,7 +2,7 @@
 
 /* All Birds */
 initList();
-
+/** Checks how to sort between the birds */
 function sortBirds(){
     switch (model.app.sortMethod) {
         case "vekt":
@@ -19,13 +19,13 @@ function sortBirds(){
             break;
     }
 }
-
+/** Saves the sort method */
 function setSort(sortType){
     model.app.sortMethod = sortType
     sortBirds()
     updateView()
 }
-
+/** Deletes the registration fields after a sucessful upload */
 const clear_registration = ()=>
 {
     model.inputs.registerPage.user_Name = "";
@@ -33,43 +33,45 @@ const clear_registration = ()=>
     model.inputs.registerPage.password = "";
     model.inputs.registerPage.e_mail = "";
 }
-
+/** Deletes the current logged in user field */
 const clear_login = ()=>
 {
     model.inputs.loginPage.password = "";
     model.inputs.loginPage.user_Name = "";
 }
+/** Signing user out of the app */
 const signOut = () =>
 {
     model.app.loggedInUser = "";
     model.app.logged_In_Identyfier = null;
 }
-
+/** Sort bird by uploads new users to the back-end */
 const upload = () =>
 {
     model.data.accounts.push(model.inputs.registerPage);
 }
-
+/** Sort bird by life weight */
 const vekt = () =>
 {
     model.app.sortedList = [...model.app.sortedList.sort((a,b) => b.we - a.we)]
 }
-
+/** Sort bird by speed */
 const fart = () =>
 {
     model.app.sortedList = [...model.app.sortedList.sort((a,b) => b.speed - a.speed)]
 }
-
+/** Sort bird by size */
 const size = () => 
 {
     model.app.sortedList = [...model.app.sortedList.sort((a,b) => b.si - a.si)]
 }
-
+/** Sort bird by life span */
 const lifespan = () =>
 {
     model.app.sortedList = [...model.app.sortedList.sort((a,b) => b.li - a.li)]
 }
 
+/** Validates the login credentials and finds a corrusponding account */
 function validator()
 {
     let i;
@@ -99,18 +101,20 @@ function regValidator()
     console.log();
 }
 
+/** Handles the transition between sites */
 function fortsett(param)
 {
     model.app.currentPage = param
     updateView()
 }
-
+/** Tracks the mouse cursor on all birds page */
 const run = (bird)=>
 {tracker.push(bird);console.log("Bird tracker " + bird);}
 
 function showDropDown()
 {document.getElementById("dropDown").classList.toggle("show");}
 
+/** Eventhandler for changing css file  */
 const swap = (csslinker,title,link) =>
 {
     console.log(csslinker)
@@ -127,6 +131,7 @@ const swap = (csslinker,title,link) =>
     console.log(model.app.currentPage);
 }
 
+/** Function that aid the sorting functions */
 function initList() {
     model.app.sortedList = [...model.data.birds];
 }
