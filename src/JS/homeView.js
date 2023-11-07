@@ -48,18 +48,6 @@ function search() {
     alert("Ingen fugler funnet");
 }
 
-function getLoggedInUser() {
-    return model.data.accounts.find((user) => user.accountId === model.app.logged_In_Identyfier);
-}
-let userBirds;
-function showLastFiveBirds() {
-    user = getLoggedInUser();
-    userBirds = model.data.birds.includes(user.birdsFound);
-    // for (let i = 5; i > 0; i--) {
-
-    // }
-}
-
 function vista() {
     let vista_Model = {
         /** Number of found birds */
@@ -68,7 +56,7 @@ function vista() {
         signed_In_Name: model.data.accounts[model.app.logged_In_Identyfier],
         /** Current state of iteration */
         current_Bird: 0,
-        /** Element function output - the output is HTML code */
+        /** Element function output - the value is HTML code */
         e: "",
     };
     if (vista_Model.signed_In_Name.name === model.app.loggedInUser) {
