@@ -1,18 +1,18 @@
 /*Fugle info*/
 
-body{
+body {
     display: flex;
     margin: 0px;
     padding: 0px;
     background-repeat: no-repeat;
     background-size: cover;
-    overflow:hidden;
+    overflow: hidden;
     background-position: 40%;
-    cursor: url('cursor-1.png'), auto; 
+    cursor: url("cursor-1.png"), auto;
 }
 
-h1{
-    color: rgb(255, 255, 255); 
+h1 {
+    color: rgb(255, 255, 255);
     font-size: 2.5rem;
     border-radius: 1%;
     margin-right: 40%;
@@ -21,10 +21,10 @@ h1{
     left: 20%;
     top: -1%;
     transform: translate(-50%, 50%);
-    cursor: url('cursor-1.png'), auto; 
+    cursor: url("cursor-1.png"), auto;
 }
 
-.tilbake{
+.tilbake {
     color: rgb(255, 255, 255);
     font-size: 1.9rem;
     font-weight: 600;
@@ -35,16 +35,16 @@ h1{
     background-color: black;
     border: gray groove;
     user-select: none;
-    cursor: url('cursor-1.png'), auto; 
+    cursor: url("cursor-1.png"), auto;
 }
 
-.tilbake:hover{
+.tilbake:hover {
     cursor: pointer;
     box-shadow: 0 0 10px 5px white;
-    cursor: url('cursor-1.png'), auto; 
+    cursor: url("cursor-1.png"), auto;
 }
 
-.hjem{
+.hjem {
     color: rgb(255, 255, 255);
     font-size: 1.9rem;
     font-weight: 600;
@@ -55,16 +55,16 @@ h1{
     border: gray groove;
     user-select: none;
     background-color: black;
-    cursor: url('cursor-1.png'), auto; 
+    cursor: url("cursor-1.png"), auto;
 }
-    
+
 .hjem:hover {
     cursor: pointer;
     box-shadow: 0 0 10px 5px white;
-    cursor: url('cursor-1.png'), auto; 
+    cursor: url("cursor-1.png"), auto;
 }
 
-.container{
+.container {
     margin-top: 2%;
     width: 100%;
     height: 100vh;
@@ -72,10 +72,10 @@ h1{
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    cursor: url('cursor-1.png'), auto; 
+    cursor: url("cursor-1.png"), auto;
 }
 
-.img{
+.img {
     border-radius: 5%;
     width: 650px;
     height: 500px;
@@ -84,32 +84,32 @@ h1{
     top: -12%;
     transform: translate(-50%, 50%);
     box-shadow: 0 0 10px 5px black;
-    cursor: url('cursor-1.png'), auto; 
+    cursor: url("cursor-1.png"), auto;
 }
 
-.fugleInfo{
+.fugleInfo {
     border-radius: 5%;
     color: rgb(0, 0, 0);
     font-size: 1.5rem;
     height: 400px;
     width: 350px;
     background-color: rgb(225, 196, 115);
-    box-shadow: 0 0 10px 5px ;
+    box-shadow: 0 0 10px 5px;
     text-align: center;
     position: absolute;
     left: 75%;
     top: 2%;
     transform: translate(-50%, 50%);
-    cursor: url('cursor-1.png'), auto; 
+    cursor: url("cursor-1.png"), auto;
 }
 
-.isFoundButton{
+.isFoundButton {
     background-color: black;
     color: rgb(225, 196, 115);
     height: 30px;
-    cursor: url('cursor-1.png'), auto; 
+    cursor: url("cursor-1.png"), auto;
 }
 
-.isFoundButton:hover{
+.isFoundButton:hover {
     box-shadow: 0 0 10px 5px rgb(0, 0, 0);
 }

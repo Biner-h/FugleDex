@@ -1,12 +1,11 @@
-
 /*Alle Fugler*/
 body {
     margin: 0px;
     padding: 0px;
     background-repeat: no-repeat;
     background-size: cover;
-    overflow:hidden;
-    cursor: url('cursor-1.png'), auto; 
+    overflow: hidden;
+    cursor: url("cursor-1.png"), auto;
 }
 
 .container {
@@ -17,16 +16,16 @@ body {
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    cursor: url('cursor-1.png'), auto; 
+    cursor: url("cursor-1.png"), auto;
 }
 h1 {
-    color: rgb(255, 255, 255); 
+    color: rgb(255, 255, 255);
     border-radius: 1%;
     margin-right: 58%;
     user-select: none;
     font-size: 2.5rem;
     margin-top: 0.5%;
-    cursor: url('cursor-1.png'), auto; 
+    cursor: url("cursor-1.png"), auto;
 }
 
 .sorterKnapp {
@@ -38,15 +37,15 @@ h1 {
     background-color: black;
     border: gray groove;
     user-select: none;
-    cursor: url('cursor-1.png'), auto; 
+    cursor: url("cursor-1.png"), auto;
 }
 
 .sorterKnapp:hover {
-    cursor: url('cursor-1.png'), auto; 
+    cursor: url("cursor-1.png"), auto;
     box-shadow: 0 0 10px 5px white;
 }
 
-.dropdown { 
+.dropdown {
     z-index: 1;
     display: flex;
     align-items: center;
@@ -56,39 +55,38 @@ h1 {
     left: 70%;
     top: 5%;
     transform: translate(-50%, 50%);
-    cursor: url('cursor-1.png'), auto; 
-  }
-  
-  .dropdown-content {
+    cursor: url("cursor-1.png"), auto;
+}
+
+.dropdown-content {
     visibility: hidden;
     position: absolute;
-    background: rgb(109,107,107);
+    background: rgb(109, 107, 107);
     color: white;
-    background: radial-gradient(circle, rgba(109,107,107,1) 0%, rgba(20,19,19,1) 100%);
+    background: radial-gradient(circle, rgba(109, 107, 107, 1) 0%, rgba(20, 19, 19, 1) 100%);
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     padding: 12px 16px;
     z-index: 1;
     margin-top: 70px;
     margin-right: 100px;
     border-radius: 10%;
     user-select: none;
-    cursor: url('cursor-1.png'), auto; 
-  }
-
-  .show {
-    visibility: visible;
-    cursor: url('cursor-1.png'), auto; 
-
+    cursor: url("cursor-1.png"), auto;
 }
 
-.sorterEtter{
+.show {
+    visibility: visible;
+    cursor: url("cursor-1.png"), auto;
+}
+
+.sorterEtter {
     font-size: 1.4rem;
     font-weight: 600;
-    cursor: url('cursor-1.png'), auto; 
+    cursor: url("cursor-1.png"), auto;
 }
 
-.sorterFilter{
+.sorterFilter {
     cursor: pointer;
     border: 3px solid white;
     width: 180px;
@@ -96,10 +94,9 @@ h1 {
     height: 20px;
     border-radius: 20px;
     text-align: center;
-    cursor: url('cursor-1.png'), auto; 
+    cursor: url("cursor-1.png"), auto;
 }
-.sorterFilter:hover
-{
+.sorterFilter:hover {
     cursor: pointer;
     border: 3px solid greenyellow;
     width: 180px;
@@ -107,7 +104,7 @@ h1 {
     height: 20px;
     border-radius: 20px;
     text-align: center;
-    cursor: url('cursor-1.png'), auto; 
+    cursor: url("cursor-1.png"), auto;
 }
 
 .home {
@@ -122,12 +119,12 @@ h1 {
     user-select: none;
     background-color: black;
     z-index: 1;
-    cursor: url('cursor-1.png'), auto; 
+    cursor: url("cursor-1.png"), auto;
 }
 
 .home:hover {
     box-shadow: 0 0 10px 5px white;
-    cursor: url('cursor-1.png'), auto; 
+    cursor: url("cursor-1.png"), auto;
 }
 
 .birds {
@@ -139,9 +136,9 @@ h1 {
     align-content: flex-start;
     gap: 2%;
     height: 100%;
-    cursor: url('cursor-1.png'), auto; 
+    cursor: url("cursor-1.png"), auto;
 }
- 
+
 .box {
     margin-top: 5%;
     width: 20%;
@@ -152,12 +149,12 @@ h1 {
     color: white;
     font-size: 1.1rem;
     font-weight: 600;
-    cursor: url('cursor-1.png'), auto; 
+    cursor: url("cursor-1.png"), auto;
 }
 
 .box :hover {
     transform: scale(103%);
-    cursor: url('cursor-1.png'), auto; 
+    cursor: url("cursor-1.png"), auto;
 }
 
 .box img {
@@ -165,18 +162,18 @@ h1 {
     height: 100%;
     border-radius: 10%;
     margin-left: 15%;
-    cursor: url('cursor-1.png'), auto; 
+    cursor: url("cursor-1.png"), auto;
 }
 
 .birdNotFound {
-    filter: grayscale(100%); 
+    filter: grayscale(100%);
     opacity: 75%;
-    cursor: url('cursor-1.png'), auto; 
+    cursor: url("cursor-1.png"), auto;
 }
 
-#birdName{
+#birdName {
     text-align: center;
     margin-right: 10%;
-    cursor: url('cursor-1.png'), auto; 
+    cursor: url("cursor-1.png"), auto;
     text-shadow: 0 10px 5px black;
 }

@@ -1,7 +1,7 @@
 updateView();
 
-function updateMyBirdsView(){
-    model.app.linker.innerHTML = /*HTML*/`
+function updateMyBirdsView() {
+    model.app.linker.innerHTML = /*HTML*/ `
     <div class="container"> 
     <h1>Alle mine funn</h1>
     <div class="dropdown">
@@ -19,14 +19,12 @@ function updateMyBirdsView(){
     </div>`;
 }
 
-function showMyBirds(model)
-{
+function showMyBirds(model) {
     let myList = model.app.sortedList.filter((bird) => bird.found === true);
 
     let div = "";
-    for(let i = 0; i < myList.length; i++)
-    {
-        div += /*HTML*/`<div onclick="showBirdInfo(${myList[i].id})" class="birdFound box">
+    for (let i = 0; i < myList.length; i++) {
+        div += /*HTML*/ `<div onclick="showBirdInfo(${myList[i].id})" class="birdFound box">
         <img src="${myList[i].image}">
         <h2 id="birdName">${myList[i].bird_Name}</h2>
         </div>`;

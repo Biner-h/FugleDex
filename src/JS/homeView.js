@@ -20,7 +20,7 @@ function updateHomePageView() {
         </div>
 
         <div class="bird-container">
-            <h2>Mine 5 siste fugler: </h2>
+            <h2>Mine ${render_title()} siste fugler</h2>
             <div class="bird-list">${vista()}</div>
         </div>
 

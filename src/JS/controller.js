@@ -2,7 +2,7 @@
 
 /* All Birds */
 initList();
-initLeaderboard();
+// initLeaderboard();
 /** Checks how to sort between the birds */
 function sortBirds() {
     switch (model.app.sortMethod) {
@@ -101,6 +101,13 @@ const run = (bird) => {
     console.log("Bird tracker " + bird);
 };
 
+function render_title() {
+    let formatted = model.data.accounts[model.app.logged_In_Identyfier].birdsFound.length;
+    return model.data.accounts[model.app.logged_In_Identyfier].birdsFound.length < 5
+        ? formatted
+        : 5;
+}
+
 function showDropDown() {
     document.getElementById("dropDown").classList.toggle("show");
 }
@@ -126,9 +133,9 @@ function initList() {
     model.app.sortedList = [...model.data.birds];
 }
 
-function initLeaderboard() {
-    model.app.leaderBoard = [
-        ...model.data.accounts.sort((a, b) => b.birdsFound.length - a.birdsFound.length),
-    ];
-    console.log(model.app.leaderBoard);
-}
+// function initLeaderboard() {
+//     model.app.leaderBoard = [
+//         ...model.data.accounts.sort((a, b) => b.birdsFound.length - a.birdsFound.length),
+//     ];
+//     console.log(model.app.leaderBoard);
+// }
