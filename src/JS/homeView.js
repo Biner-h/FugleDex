@@ -48,6 +48,18 @@ function search() {
     alert("Ingen fugler funnet");
 }
 
+function getLoggedInUser() {
+    return model.data.accounts.find((user) => user.accountId === model.app.logged_In_Identyfier);
+}
+let userBirds;
+function showLastFiveBirds() {
+    user = getLoggedInUser();
+    userBirds = model.data.birds.includes(user.birdsFound);
+    // for (let i = 5; i > 0; i--) {
+
+    // }
+}
+
 function vista() {
     let vista_Model = {
         /** Number of found birds */
@@ -56,7 +68,7 @@ function vista() {
         signed_In_Name: model.data.accounts[model.app.logged_In_Identyfier],
         /** Current state of iteration */
         current_Bird: 0,
-        /** Element function output */
+        /** Element function output - the output is HTML code */
         e: "",
     };
     if (vista_Model.signed_In_Name.name === model.app.loggedInUser) {
@@ -65,25 +77,19 @@ function vista() {
                 vista_Model.current_Bird = vista_Model.signed_In_Name.birdsFound[c];
                 vista_Model.e += `<p>${model.data.birds[vista_Model.current_Bird].bird_Name}</p>`;
             }
-        } else if (vista_Model.birdsLength < 4) {
-            for (let c = vista_Model.birdsLength - 1; c >= vista_Model.birdsLength - 4; c--) {
+        } else if (vista_Model.birdsLength < 5) {
+            for (
+                let c = vista_Model.birdsLength - 1;
+                c >= Math.max(0, vista_Model.birdsLength - 5);
+                c--
+            ) {
                 vista_Model.current_Bird = vista_Model.signed_In_Name.birdsFound[c];
                 vista_Model.e += `<p>${model.data.birds[vista_Model.current_Bird].bird_Name}</p>`;
             }
         }
-         else if (vista_Model.birdsLength < 3) {
-            for (let c = vista_Model.birdsLength - 1; c >= vista_Model.birdsLength - 3; c--) {
-                vista_Model.current_Bird = vista_Model.signed_In_Name.birdsFound[c];
-                vista_Model.e += `<p>${model.data.birds[vista_Model.current_Bird].bird_Name}</p>`;
-            }
-        
+
         console.log(vista_Model.e);
         return vista_Model.e;
-        // } else if (vista_Model.birdsLength < 5) {
-        //     for (let i = 0; i != vista_Model.birdsLength - vista_Model.birdsLength; i++) {
-        //         vista_Model.current_Bird = vista_Model.signed_In_Name.birdsFound[i];
-        //         vista_Model.e += `<p>${model.data.birds[vista_Model.current_Bird].bird_Name}</p>`;
-        //     }
     } else {
         console.log("Error-404 innvalid token");
     }
