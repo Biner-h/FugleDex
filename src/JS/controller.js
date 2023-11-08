@@ -1,8 +1,8 @@
 "use strict";
 
 /* All Birds */
-initList();
 // initLeaderboard();
+initList();
 /** Checks how to sort between the birds */
 function sortBirds() {
     switch (model.app.sortMethod) {
@@ -133,9 +133,9 @@ function initList() {
     model.app.sortedList = [...model.data.birds];
 }
 
-// function initLeaderboard() {
-//     model.app.leaderBoard = [
-//         ...model.data.accounts.sort((a, b) => b.birdsFound.length - a.birdsFound.length),
-//     ];
-//     console.log(model.app.leaderBoard);
-// }
+function initLeaderboard() {
+    model.app.leaderBoard = [
+        ...model.data.accounts.sort((a, b) => b.birdsFound.length - a.birdsFound.length),
+    ];
+    console.log(model.app.leaderBoard);
+}

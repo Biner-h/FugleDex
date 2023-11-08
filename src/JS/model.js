@@ -13,7 +13,7 @@ const model = {
         currentBird: null,
         sortMethod: "size",
         sortedList: [],
-        // leaderBoard: [],
+        leaderBoard: [],
     },
 
     inputs: {

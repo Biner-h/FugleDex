@@ -154,10 +154,10 @@ label {
 
 .leaderboard-container {
     position: absolute;
-    top: 20%;
+    top: 25%;
     right: 5%;
     width: 350px;
-    height: 550px;
+    height: 370px;
     background-color: rgb(56, 56, 56);
     color: white;
     padding: 20px;
@@ -187,7 +187,7 @@ p {
 
 .img {
     position: absolute;
-    top: 55%;
+    top: 53%;
     left: 52%;
     transform: translate(-50%, 50%);
     width: 550px;
