@@ -18,7 +18,7 @@ function updateHomePageView() {
             </div>
         </div>
         </div>
-
+        <!-- Leaderboard includes all registered accounts -->
         <div class="bird-container">
             <h2>Mine ${render_title()} siste fugler</h2>
             <div class="bird-list">${vista()}</div>
@@ -43,11 +43,12 @@ function toggleDropdown() {
             ? "block"
             : "none";
 }
-
+/** Native search engine */
 function search() {
     alert("Ingen fugler funnet");
 }
 
+/** Renders the last 5 birds */
 function vista() {
     let vista_Model = {
         /** Number of found birds */
