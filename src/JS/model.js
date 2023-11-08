@@ -65,7 +65,7 @@ const model = {
                 user_Name: "Flying_Bird_420",
                 e_mail: "eskil@Birdmail.org",
                 password: "ChoreiElsker",
-                birdsFound: [0, 1, 3],
+                birdsFound: [0, 1, 3, 6, 4],
             },
             {
                 accountId: 2,
@@ -239,7 +239,7 @@ const model = {
             {
                 id: 7,
                 bird_Name: "Hakkespett",
-                found: false,
+                found: true,
                 image: "./src/Picture/Bird/DSC_2554a.jpg",
                 bird_Description: "Small bird",
                 life_Span: "6 - 11 år",

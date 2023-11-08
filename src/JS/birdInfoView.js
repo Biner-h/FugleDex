@@ -1,7 +1,6 @@
-
-function updateBirdInfoView(){
-    let birdToShow = model.data.birds.find((bird) => bird.id === model.app.currentBird)
-    model.app.linker.innerHTML = /*HTML*/`
+function updateBirdInfoView() {
+    let birdToShow = model.data.birds.find((bird) => bird.id === model.app.currentBird);
+    model.app.linker.innerHTML = /*HTML*/ `
     <div class="container">
         <h1>Fugle info</h1>
         <h2 class="tilbake" onclick="tilbake()">Tilbake</h2>
@@ -14,20 +13,23 @@ function updateBirdInfoView(){
             <p>Fart: ${birdToShow.speed_Descriptor}</p>
             <p>Størrelse: ${birdToShow.size}</p>
             <p>Bosted: ${birdToShow.area}</p>
-            <button class="isFoundButton" onclick="haveFound()">Finn<button>
+            <button class="isFoundButton ${birdToShow.bird_Name} " onclick="putBirdInMyBirds(this)">Finn<button>
         </div>
-    </div>`
+    </div>`;
 }
 
-function showBirdInfo(birdId){
-    model.app.currentBird = birdId
-    fortsett('birdInfo')
-    updateView()
+function showBirdInfo(birdId) {
+    model.app.currentBird = birdId;
+    fortsett("birdInfo");
 }
 
-function tilbake(){
+function tilbake() {
     model.app.currentPage = model.app.pageOrigin;
     model.app.pageOrigin = "";
     updateView();
-    
 }
+
+// function putBirdInMyBirds(htmlElement) {
+//     console.log(htmlElement.classList);
+//     //
+// }

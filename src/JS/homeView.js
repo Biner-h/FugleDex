@@ -1,3 +1,5 @@
+initLeaderboard();
+initList();
 function updateHomePageView() {
     model.app.linker.innerHTML = /*HTML*/ `
         <div class="search-container">
@@ -91,14 +93,14 @@ function render_Board() {
         e: "",
         bird_Count: 0,
     };
-        for (let i = 0; i < 5; i++) {
-            let selected = board_Model.account[i];
-            console.log(selected)
-            board_Model.bird_Count = 0;
-           // for (let x = 0; x <= selected.birdsFound[x]; x++) {board_Model.bird_Count++}
-           board_Model.bird_Count++;
-            board_Model.e += `<p>${selected.name}<span class="leaderboard-info">${selected.birdsFound.length} - fugler</span></p>`;
-        }
+    for (let i = 0; i < 5; i++) {
+        let selected = board_Model.account[i];
+        console.log(selected);
+        board_Model.bird_Count = 0;
+        // for (let x = 0; x <= selected.birdsFound[x]; x++) {board_Model.bird_Count++}
+        board_Model.bird_Count++;
+        board_Model.e += `<p>${selected.name}<span class="leaderboard-info">${selected.birdsFound.length} - fugler</span></p>`;
+    }
 
     console.log(board_Model.signed_In_Name + "+");
     return board_Model.e;

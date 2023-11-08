@@ -135,7 +135,9 @@ function initList() {
 
 function initLeaderboard() {
     model.app.leaderBoard = [
-        ...model.data.accounts.sort((a, b) => b.birdsFound.length - a.birdsFound.length),
+        ...model.data.accounts.sort(
+            (a, b) => b.birdsFound.length - a.birdsFound.length
+        ),
     ];
     console.log(model.app.leaderBoard);
 }
