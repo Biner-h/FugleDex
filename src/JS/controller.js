@@ -1,7 +1,7 @@
 "use strict";
 
 /* All Birds */
-// initLeaderboard();
+initLeaderboard();
 initList();
 /** Checks how to sort between the birds */
 function sortBirds() {
