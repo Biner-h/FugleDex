@@ -43,7 +43,7 @@ function toggleDropdown() {
             ? "block"
             : "none";
 }
-/** Native search engine */
+/** Native search engine for bird dex*/
 function search() {
     alert("Ingen fugler funnet");
 }
