@@ -28,11 +28,7 @@ function updateHomePageView() {
 
         <div class="leaderboard-container">
             <h2>Leaderboard</h2>
-            <div class="leaderboard-list">
-                <p>Linn<span class="leaderboard-info">7 - Hakkespett</span></p>
-                <p>Eskil <span class="leaderboard-info">3 - Kjøttmeis</span></p>
-                <p>Terje<span class="leaderboard-info">2 - Toca Toucan</span></p>
-            </div>
+            <div class="leaderboard-list">${render_Board()}</div>
         </div>`;
 }
 
@@ -43,7 +39,7 @@ function toggleDropdown() {
             ? "block"
             : "none";
 }
-/** Native search engine for bird dex*/
+/** Native search engine for birddex*/
 function search() {
     alert("Ingen fugler funnet");
 }
@@ -83,3 +79,27 @@ function vista() {
         console.log("Error-404 innvalid token");
     }
 }
+
+function render_Board() {
+    let board_Model = {
+        /** Account length */
+        account: model.data.accounts,
+        /** Number of found birds */
+        birdsLength: model.data.accounts[model.app.logged_In_Identyfier].birdsFound.length,
+        /** Name of signed in user */
+        signed_In_Name: model.data.accounts[model.app.logged_In_Identyfier],
+        e: "",
+        bird_Count: 0,
+    };
+        for (let i = 0; i < board_Model.account.length; i++) {
+            let selected = board_Model.account[i];
+            console.log(selected)
+            board_Model.bird_Count = 0;
+            for (let x = 0; x <= selected.birdsFound[x]; x++) {board_Model.bird_Count++}
+            board_Model.e += `<p>${selected.name}<span class="leaderboard-info">${board_Model.bird_Count} - fugler</span></p>`;
+        }
+
+    console.log(board_Model.signed_In_Name + "+");
+    return board_Model.e;
+}
+/** <p>Linn<span class="leaderboard-info">7 - fugler</span></p>*/

@@ -4,8 +4,8 @@ body {
     padding: 0px;
     background-repeat: no-repeat;
     background-size: cover;
-    overflow:hidden;
-    cursor: url('cursor-1.png'), auto; 
+    overflow: hidden;
+    cursor: url("cursor-1.png"), auto;
     user-select: none;
 }
 .button-containers {
@@ -16,26 +16,23 @@ body {
     display: flex;
     margin-right: 5%;
     justify-content: space-between;
-    cursor: url('cursor-1.png'), auto; 
-
+    cursor: url("cursor-1.png"), auto;
 }
 
-#loggetInn{
+#loggetInn {
     color: white;
     font-size: 1.5rem;
     font-weight: 600;
     margin: 10px;
     position: relative;
     user-select: none;
-    cursor: url('cursor-1.png'), auto; 
-
+    cursor: url("cursor-1.png"), auto;
 }
 
 .dropdownhome {
     position: relative;
     display: inline-block;
-    cursor: url('cursor-1.png'), auto; 
-
+    cursor: url("cursor-1.png"), auto;
 }
 
 .dropdown-toggle {
@@ -43,7 +40,7 @@ body {
     padding: 10px;
     border-radius: 5px;
     user-select: none;
-    cursor: url('cursor-1.png'), auto; 
+    cursor: url("cursor-1.png"), auto;
 }
 
 .dropdown-menu {
@@ -54,7 +51,7 @@ body {
     z-index: 1;
     width: 168%;
     user-select: none;
-    cursor: url('cursor-1.png'), auto; 
+    cursor: url("cursor-1.png"), auto;
 }
 
 .dropdown-item {
@@ -62,16 +59,16 @@ body {
     padding: 10px;
     color: rgb(255, 248, 248);
     user-select: none;
-    cursor: url('cursor-1.png'), auto; 
+    cursor: url("cursor-1.png"), auto;
 }
 
 .dropdown-item:hover {
     background-color: white;
     color: black;
-    cursor: url('cursor-1.png'), auto; 
+    cursor: url("cursor-1.png"), auto;
 }
 
-.foundBtn{
+.foundBtn {
     margin: 20px;
     color: rgb(255, 255, 255);
     font-size: 1.7rem;
@@ -79,15 +76,15 @@ body {
     position: relative;
     background-color: black;
     border: gray groove;
-    cursor: url('cursor-1.png'), auto; 
+    cursor: url("cursor-1.png"), auto;
 }
 
-.foundBtn:hover{
+.foundBtn:hover {
     box-shadow: 0 0 10px 5px white;
-    cursor: url('cursor-1.png'), auto; 
+    cursor: url("cursor-1.png"), auto;
 }
 
-.allBtn{
+.allBtn {
     margin: 20px;
     position: relative;
     color: rgb(255, 255, 255);
@@ -95,51 +92,51 @@ body {
     font-weight: 600;
     background-color: black;
     border: gray groove;
-    cursor: url('cursor-1.png'), auto; 
+    cursor: url("cursor-1.png"), auto;
 }
 
-.allBtn:hover{
+.allBtn:hover {
     box-shadow: 0 0 10px 5px white;
-    cursor: url('cursor-1.png'), auto; 
+    cursor: url("cursor-1.png"), auto;
 }
 
-.fugledex{
+.fugledex {
     color: white;
     font-size: 1.7rem;
     font-weight: 600;
     margin-right: 2%;
-    cursor: url('cursor-1.png'), auto; 
+    cursor: url("cursor-1.png"), auto;
 }
 
 input {
     border-radius: 5px;
     font-size: 1.5rem;
-    cursor: url('cursor-1.png'), auto; 
+    cursor: url("cursor-1.png"), auto;
 }
 
 .search-container {
-    position:absolute;
+    position: absolute;
     top: 5%;
     left: 2%;
     display: flex;
     margin-right: 100%;
-    cursor: url('cursor-1.png'), auto; 
+    cursor: url("cursor-1.png"), auto;
 }
 
-.icon{
-    cursor: url('cursor-1.png'), auto; 
+.icon {
+    cursor: url("cursor-1.png"), auto;
     font-size: 20px;
     transition: transform 0.3s ease;
 }
 
-.icon:hover{
+.icon:hover {
     transform: scale(1.2);
-    cursor: url('cursor-1.png'), auto; 
+    cursor: url("cursor-1.png"), auto;
 }
 
-label{
+label {
     display: flex;
-    cursor: url('cursor-1.png'), auto; 
+    cursor: url("cursor-1.png"), auto;
 }
 
 .bird-container {
@@ -152,28 +149,27 @@ label{
     color: white;
     padding: 20px;
     border-radius: 20px;
-    cursor: url('cursor-1.png'), auto; 
+    cursor: url("cursor-1.png"), auto;
 }
 
 .leaderboard-container {
     position: absolute;
-    top: 25%;
+    top: 20%;
     right: 5%;
     width: 350px;
-    height: 300px;
+    height: 550px;
     background-color: rgb(56, 56, 56);
     color: white;
     padding: 20px;
     border-radius: 20px;
-    cursor: url('cursor-1.png'), auto; 
+    cursor: url("cursor-1.png"), auto;
 }
 
 .leaderboard-info {
-    margin-left: 35%; 
-    font-size: 20px; 
+    margin-left: 35%;
+    font-size: 20px;
     color: lightgray;
-    cursor: url('cursor-1.png'), auto; 
-
+    cursor: url("cursor-1.png"), auto;
 }
 
 .bird-list p,
@@ -181,19 +177,19 @@ label{
     font-size: 18px;
     margin-bottom: 10px;
     border: 1px solid black;
-    cursor: url('cursor-1.png'), auto; 
+    cursor: url("cursor-1.png"), auto;
 }
 
 p {
     padding: 10px;
-    cursor: url('cursor-1.png'), auto; 
+    cursor: url("cursor-1.png"), auto;
 }
 
-.img{
+.img {
     position: absolute;
-    top: 65%;
-    left: 84%;
+    top: 55%;
+    left: 52%;
     transform: translate(-50%, 50%);
-    width: 400px;
+    width: 550px;
     opacity: 75%;
 }
