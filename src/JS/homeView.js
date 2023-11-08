@@ -103,4 +103,3 @@ function render_Board() {
     console.log(board_Model.signed_In_Name + "+");
     return board_Model.e;
 }
-/** <p>Linn<span class="leaderboard-info">7 - fugler</span></p>*/

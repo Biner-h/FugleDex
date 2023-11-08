@@ -56,7 +56,7 @@ const model = {
                 user_Name: "",
                 e_mail: "Linn123@Birdmail.org",
                 password: "",
-                birdsFound: [0, 1, 5, 6, 4, 3, 7],
+                birdsFound: [0, 1, 5, 6, 4, 7],
             },
 
             {
@@ -154,7 +154,7 @@ const model = {
             {
                 id: 2,
                 bird_Name: "Fossekall",
-                found: true,
+                found: false,
                 image: "./src/Picture/Bird/fosse.jpg",
                 bird_Description: "Small bird",
                 life_Span: "8 - 10 år",
@@ -189,7 +189,7 @@ const model = {
                 id: 4,
                 bird_Name: "Nøtteskrike",
                 image: "./src/Picture/Bird/ntteskrike.jpg",
-                found: false,
+                found: true,
                 bird_Description: "small bird",
                 life_Span: "1 - 5 år",
                 li: 5,
@@ -205,7 +205,7 @@ const model = {
             {
                 id: 5,
                 bird_Name: "Blåmeis",
-                found: false,
+                found: true,
                 image: "./src/Picture/Bird/blameis.jpg",
                 bird_Description: "Small bird",
                 life_Span: "3 år",
