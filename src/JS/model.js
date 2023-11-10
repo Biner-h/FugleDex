@@ -53,9 +53,9 @@ const model = {
             {
                 accountId: 0,
                 name: "Linn",
-                user_Name: "",
+                user_Name: "birdlover",
                 e_mail: "Linn123@Birdmail.org",
-                password: "",
+                password: "kjøttmeis",
                 birdsFound: [0, 1, 5, 6, 4, 7],
             },
 
